@@ -1,0 +1,61 @@
+<!-- Apana Collage Web developemt Course -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Create a Account</title>
+</head>
+<body>
+    <form action="GET" class="container">
+        <h2 class="main_heading">Payment Information</h2>
+        <hr>
+        <p>Name : <input type="text" required name="name" placeholder="Your name" ></p>
+        <p>
+            <fieldset>
+                <legend>Gender</legend>
+                Male<input type="radio" name="gender" id="male" value="M" required>
+                Female<input type="radio" name="gender" id="male" value="M" required>
+            </fieldset>
+        </p>
+        <p>
+            Address:
+            <textarea placeholder="Enter your address here" name="adress" id="address" rows="10" cols="45"></textarea>
+        </p>
+        <p>
+            Email:
+            <input type="email" placeholder="email@compny.com" id="email" name="email">
+        </p>
+        <p>
+            Pincode
+            <input type="number" name="pincode" id="pincode" value="123456">
+        </p>
+        <p>
+            <h2>Payment Information</h2>
+           
+            <p>Card type:
+                <select name="card_type" id="card_type" required>
+                    <option value="">--Select card Type--</option>
+                    <option value="visa"> Visa </option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="rupay" >Rupay</option>
+            </select>
+            </p>    
+
+            <p>
+                Card number:<input required type="number" name="card_number" id="card_number" placeholder="1111-2222-3333-4444">
+            </p>
+            <p>
+                Expiration Date:<input required type="date" name="exp_date" id="exp_date" >
+            </p>
+            <p>
+                CVV:<input type="password" placeholder="123" required type="password" id="cvv" name="cvv">
+            </p>
+        </p>
+        <input type="submit" value="Pay now">
+        
+    </form> 
+</body>
+</html>
